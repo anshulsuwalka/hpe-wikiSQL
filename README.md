@@ -16,29 +16,36 @@ This project, developed as part of the HPE Internship Program, enables users to 
 
 ## 📁 Project Structure
 
-2. Create and Activate a Virtual Environment
+1. Create and Activate a Virtual Environment
+```
 python -m venv myvenv
 myvenv\Scripts\activate  # For Windows
-
-3. Check Python & Pip Versions
-python --version (3.8.0 - < 3.12.0)
+```
+2. Check Python & Pip Versions: Python version should be (3.8.0 - <3.12.0)
+```
+python --version 
 pip --version 
-
-4. Upgrade Pip
+```
+3. Upgrade Pip:
+```
 python -m pip install --upgrade pip
+```
 
-5.Install Dependencies 
+4.Install Dependencies:
+```
 pip install -r requirements.txt
-
-🧪 Running the Application
+```
+🧪 Running the Application: 
 1. Start the FastAPI Backend  run:
-
+```
  uvicorn main:app --reload --port 8000
+```
 
-3. Launch the Streamlit Frontend
+2. Launch the Streamlit Frontend
 Open a new terminal and activate the virtual environment again, then run:
+```
 streamlit run app.py
-
+```
 🗄️ Database Configuration
 Ensure that your PostgreSQL instance is running and accessible. Update your database credentials inside the appropriate configuration file or environment variables.
 
